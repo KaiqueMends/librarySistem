@@ -60,7 +60,7 @@ while True:
 
     if menu_option == 1:
         id = int(input("Informe o código do cliente: "))
-        if (customer_repository.verify_customer_id(id, customer_repository)):
+        if (customer_repository.verify_if_customer_exists(id, customer_repository)):
             print("Esse id de cliente já existe!\n")
         else:    
             nome = input("Informe o nome do cliente: ")
